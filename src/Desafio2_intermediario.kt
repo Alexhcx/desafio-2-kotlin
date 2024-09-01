@@ -1,3 +1,31 @@
+/*
+
+    Crie a classe 'ConservacaoMarinha' para gerenciar informações
+essenciais sobre conservação marinha, com propriedades como tipo de
+ambiente marinho, área protegida em km2 e a presença de programas
+de monitoramento. Além disso, desenvolva subclasses como
+'ReservaMarinha' ou 'AreaProtegidaMarinha' e enumere os tipos de
+ambientes disponíveis.
+
+OBJETIVOS
+Enumeradores, Comando lateinit, Comando With,
+DataClass, Herança e Modificadores de Acesso
+
+ENTRADA:
+TipoAmbiente: String
+AreaProtegidaEmKm2: Double
+PossuiProgramaMonitoramento: Booleano
+TipoReserva (para ReservaMarinha): String
+TipoProtecao (para AreaProtegidaMarinha): String
+
+SÁIDA:
+Informações detalhadas de cada instância
+criada, incluindo o tipo de ambiente marinho,
+área protegida, se possui programa de
+monitoramento, e detalhes específicos como
+tipo de reserva ou tipo de proteção.
+
+*/
 
 enum class TiposAmbientes {
     OCEANO, COSTA, RECIFE, ESTUARIO
@@ -35,7 +63,7 @@ fun main() {
         val tipoAmbiente = try {
             TiposAmbientes.valueOf(tipo ?: "OCEANO")
         } catch (e: IllegalArgumentException) {
-            println("Tipo de ambiente inválido. Usando OCEANO como padrão.")
+            println("Tipo de ambiente inválido. OCEANO será usado como valor padrão")
             TiposAmbientes.OCEANO
         }
 
