@@ -1,4 +1,4 @@
-/*
+package Intermediario/*
 
     Crie a classe 'ConservacaoMarinha' para gerenciar informações
 essenciais sobre conservação marinha, com propriedades como tipo de
