@@ -1,5 +1,6 @@
-package Intermediario/*
+package Intermediario
 
+/*
     Crie a classe 'ConservacaoMarinha' para gerenciar informações
 essenciais sobre conservação marinha, com propriedades como tipo de
 ambiente marinho, área protegida em km2 e a presença de programas
@@ -24,7 +25,6 @@ criada, incluindo o tipo de ambiente marinho,
 área protegida, se possui programa de
 monitoramento, e detalhes específicos como
 tipo de reserva ou tipo de proteção.
-
 */
 
 enum class TiposAmbientes {
